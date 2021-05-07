@@ -16,7 +16,7 @@ public class Vetor {
 		
 		
 		int[] numero= new int[6];
-		int somapar=0,somaimp=0,x;
+		int somapar=0,quantimp=0,x;
 		
 		for(x=0;x<6;x++) {
 			System.out.println("\nDigite o número: ");
@@ -27,7 +27,8 @@ public class Vetor {
 				
 			}
 			else {
-				somaimp=somaimp+numero[x];
+				
+				quantimp++;
 			}
 		}
 		for(x=0;x<6;x++) {
@@ -37,11 +38,14 @@ public class Vetor {
 			}
 			else
 			{
+				
 				System.out.println("\nOs números ímpares digitados são: "+numero[x]);
+				
 			}
 		}
 		System.out.println("\nA soma dos números pares digitados é: "+somapar);
-		System.out.println("\nA soma dos números ímpares digitados é: "+somaimp);
+		
+		System.out.println("\nA Quantidade dos números ímpares digitados é: "+quantimp);
 		
         }
      }
