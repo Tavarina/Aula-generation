@@ -1,6 +1,6 @@
 package Heranca;
 
-public class Animal {
+public class Animal{
 	
 	/*Crie uma hierarquia de classes conforme abaixo com os 
 	 * seguintes atributos e comportamentos (observe a tabela), 
@@ -11,11 +11,16 @@ public class Animal {
 	private String nome;
 	private int idade;
 	
-	public Animal(String nome, int idade)
+	
+	public Animal(String nomeAnimal, int idadeAnimal)
 	{
-		this.nome = nome;
-		this.idade = idade;
+		this.nome = nomeAnimal;
+		this.idade = idadeAnimal;
 		
+	}
+	
+	public void emitirSom() {
+		System.out.println("Emitindo som: ");
 	}
 
 	public String getNome() {
@@ -35,15 +40,10 @@ public class Animal {
 		this.idade = idade;
 	}
 
-	public void emitirSom() {
-		
-		System.out.println("Emitir som: ");
-	}
-		public void acao() {
-			System.out.println("O que deve fazer? ");
+	
 			
 			
 	}
 		
-}
+
 
