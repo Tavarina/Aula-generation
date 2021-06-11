@@ -11,6 +11,16 @@ import javax.validation.constraints.Size;
 @Entity
 @Table(name ="tb_usuario")
 public class Usuario {
+	
+	
+	public Usuario() {
+
+	}
+
+	public Usuario(@NotNull String usuario, @NotNull String senha) {
+		this.usuario = usuario;
+		this.senha = senha;
+	}
 
 	
 	@Id
